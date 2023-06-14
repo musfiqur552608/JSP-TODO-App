@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
+ pageEncoding="ISO-8859-1"%>
+    <!DOCTYPE html>
     <html>
 
     <head>
@@ -25,19 +25,19 @@
                 <form action="register" method="post">
 
                     <div class="form-group">
-                        <label for="uname">First Name:</label> <input type="text" class="form-control" id="uname" placeholder="First Name" name="firstName" required>
+                        <label for="uname">First Name:</label> <input type="text" class="form-control" id="uname" placeholder="First Name" name="firstName" value="${firstName}" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="uname">Last Name:</label> <input type="text" class="form-control" id="uname" placeholder="last Name" name="lastName" required>
+                        <label for="uname">Last Name:</label> <input type="text" class="form-control" id="uname" placeholder="last Name" name="lastName" value="${lastName}" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="uname">User Name:</label> <input type="text" class="form-control" id="username" placeholder="User Name" name="username" required>
+                        <label for="uname">User Name:</label> <input type="text" class="form-control" id="username" placeholder="User Name" name="username" value="${username}" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="uname">Password:</label> <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+                        <label for="uname">Password:</label> <input type="password" class="form-control" id="password" placeholder="Password" name="password" value="${password}" required>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -45,7 +45,6 @@
                 </form>
             </div>
         </div>
-        <jsp:include page="Footer.jsp"></jsp:include>
     </body>
 
     </html>
