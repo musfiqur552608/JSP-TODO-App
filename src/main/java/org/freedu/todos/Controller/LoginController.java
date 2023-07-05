@@ -37,7 +37,7 @@ public class LoginController extends HttpServlet {
 
         try {
             if (loginDao.validate(loginBean)) {
-                RequestDispatcher dispatcher = request.getRequestDispatcher("register.jsp");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("todo-list.jsp");
                 dispatcher.forward(request, response);
             } else {
                 HttpSession session = request.getSession();
